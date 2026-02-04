@@ -16,7 +16,7 @@
 
   - name: mostrar estado
     debug:
-      var: estado
+      var: estado.stdout
     when: estado.rc == 0
 
   
