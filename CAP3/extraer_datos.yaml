@@ -1,0 +1,8 @@
+---
+- name: Extraer datos del servidor remoto
+  hosts: all
+
+  tasks:
+  - name: mostrar los datos
+    debug: 
+      var: ansible_facts
