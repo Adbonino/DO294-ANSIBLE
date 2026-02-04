@@ -1,0 +1,9 @@
+---
+- name: Ejemlo de creacion de un usuario
+  hosts: all
+
+  tasks:
+    - name: Creacion del usuario
+      user:
+        name: lucas
+        state: present
