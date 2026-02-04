@@ -1,0 +1,22 @@
+---
+- name: instlalacion de un sitio web
+  hosts: all
+  become: true
+
+  tasks:
+  
+    - name: instalar httpd
+      yum:
+        name: httpd
+        state: present
+
+    - name: copiar index.html
+      copy:
+         src: ./files/index.html
+         dest: /var/www/html/index.html
+    
+    - name: iniciar httpd
+      service:
+        name: httpd
+        state: started
+        enabled: true
