@@ -5,7 +5,7 @@
   tasks:
 
   - name: ejecutando comando
-    command: systemctl status httpd
+    command: systemct status httpd
     register: estado
   
   - name: mostrar estado
