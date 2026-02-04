@@ -8,7 +8,7 @@ Ctrl + Shift + V  -> Para visualizarlo
 #git commit -m "Primer commit"
 #
 #git branch -M main
-#git remote add origin https://github.com/USUARIO/repositorio.git
+#git remote add origin https://github.com/USUARIO/repositorio.git  -> debe existir
 #git push -u origin main
 ```
 
