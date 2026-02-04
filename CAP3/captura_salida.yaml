@@ -1,0 +1,14 @@
+---
+- name: capturando la salida de un comando y mostrala por salida standard
+  hosts: all
+
+  tasks:
+
+  - name: ejecutando comando
+    command: systemctl status httpd
+    register: estado
+  
+  - name: mostrar estado
+    debug:
+      var: estado
+  
