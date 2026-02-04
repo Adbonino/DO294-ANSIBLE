@@ -1,6 +1,7 @@
 ---
 - name: Ejemlo de creacion de un usuario
   hosts: all
+  become: true
 
   tasks:
     - name: Creacion del usuario
