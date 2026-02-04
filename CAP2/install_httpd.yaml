@@ -1,7 +1,6 @@
 ---
 - name: instlalacion de un sitio web
   hosts: all
-  become: true
 
   tasks:
   
